@@ -9,7 +9,7 @@ or want to see all TCP ports currently in use.
 
 Get an available ephemeral TCP port number.
 
-``powershell
+```powershell
 Get-InactiveTcpPortNumber -Random
 ```
 
