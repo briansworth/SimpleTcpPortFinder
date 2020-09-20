@@ -74,6 +74,12 @@ Describe 'Get-InactiveTcpPortNumber' {
     $result | Should -BeGreaterOrEqual 1
   }
 
+  It 'Runs successfully with StartRange > EndRange' {
+    $result = Get-InactiveTcpPortNumber -StartRange 2 -EndRange 1
+
+    $result | Should -BeExactly 1
+  }
+
   It 'Throws when unable to find inactive port' {
     $s = $range[0]
     $e = $range[-1]
