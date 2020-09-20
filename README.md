@@ -21,7 +21,7 @@ Get-InactiveTcpPortNumber -Random
 
 List all TCP port numbers currently in use.
 
-``powershell
+```powershell
 Get-ActiveTcpPortNumber
 ```
 
